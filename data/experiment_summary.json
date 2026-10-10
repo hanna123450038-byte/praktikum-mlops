@@ -1,0 +1,51 @@
+{
+  "dataset_hash": "42925f016a7116ffd68e227679f59780",
+  "best_hyperparameters": {
+    "lr": 0.0020042257935861674,
+    "batch_size": 128,
+    "conv1_channels": 32,
+    "conv2_channels": 32,
+    "fc_units": 128,
+    "dropout_rate": 0.1,
+    "optimizer": "Adam"
+  },
+  "best_val_accuracy": 0.75,
+  "stability_mean_acc": 78.87,
+  "stability_std_acc": 0.98,
+  "stability_mean_loss": 0.556,
+  "stability_std_loss": 0.0256,
+  "ablation_results": [
+    {
+      "Configuration": "Full_Model (Dropout + Augmentation)",
+      "Dropout": "Yes",
+      "Augmentation": "Yes",
+      "Test Accuracy (%)": 77.33,
+      "Test Loss": 0.5762
+    },
+    {
+      "Configuration": "No_Dropout (Augmentation Only)",
+      "Dropout": "No",
+      "Augmentation": "Yes",
+      "Test Accuracy (%)": 80.02,
+      "Test Loss": 0.5522
+    },
+    {
+      "Configuration": "No_Augmentation (Dropout Only)",
+      "Dropout": "Yes",
+      "Augmentation": "No",
+      "Test Accuracy (%)": 85.64,
+      "Test Loss": 0.3967
+    },
+    {
+      "Configuration": "Baseline_Minimal (No Dropout + No Aug)",
+      "Dropout": "No",
+      "Augmentation": "No",
+      "Test Accuracy (%)": 84.84,
+      "Test Loss": 0.4172
+    }
+  ],
+  "champion_model_name": "FashionMNIST_Classifier",
+  "champion_version": 1,
+  "champion_uri": "models:/FashionMNIST_Classifier@champion",
+  "champion_test_accuracy": 85.64
+}

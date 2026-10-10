@@ -1,0 +1,5 @@
+Configuration,Dropout,Augmentation,Test Accuracy (%),Test Loss
+Full_Model (Dropout + Augmentation),Yes,Yes,77.33,0.5762
+No_Dropout (Augmentation Only),No,Yes,80.02,0.5522
+No_Augmentation (Dropout Only),Yes,No,85.64,0.3967
+Baseline_Minimal (No Dropout + No Aug),No,No,84.84,0.4172

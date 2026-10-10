@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/ACER/workbench-workspace/praktikum-mlops/mlruns/2/models/m-03d0d5a887954dccbb5e02641d11a64a/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.12.6
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.14.0+cpu
+mlflow_version: 3.17.0
+model_id: m-03d0d5a887954dccbb5e02641d11a64a
+model_size_bytes: 2609
+model_uuid: m-03d0d5a887954dccbb5e02641d11a64a
+prompts: null
+run_id: e08ed2ae029c451a91e89065abb733ad
+utc_time_created: '2026-10-10 17:46:24.483162'

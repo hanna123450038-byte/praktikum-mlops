@@ -1,0 +1,23 @@
+{
+  "dataset_name": "Fashion-MNIST",
+  "hash_md5": "c4a90d19b5387e62d7f07e3f11694b51",
+  "num_train_samples": 60000,
+  "num_test_samples": 10000,
+  "classes": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "input_shape": [
+    1,
+    28,
+    28
+  ]
+}

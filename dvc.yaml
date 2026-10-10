@@ -1,0 +1,30 @@
+stages:
+  prepare_data:
+    cmd: python src/dataset.py
+    deps:
+      - src/dataset.py
+    outs:
+      - data/metadata.json:
+          cache: false
+
+  train_and_experiment:
+    cmd: python src/train.py
+    deps:
+      - src/train.py
+      - src/model.py
+      - data/metadata.json
+    outs:
+      - data/experiment_summary.json:
+          cache: false
+      - data/ablation_results.csv:
+          cache: false
+
+  generate_report:
+    cmd: python generate_report.py
+    deps:
+      - generate_report.py
+      - LAPORAN_PRAKTIKUM.md
+      - data/experiment_summary.json
+    outs:
+      - LAPORAN_PRAKTIKUM.pdf:
+          cache: false
